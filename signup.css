@@ -1,0 +1,176 @@
+/* StockPredict Global Variables */
+:root {
+    --bg-color: #0b101b;           /* Deep dark background */
+    --card-bg: #111827;           /* Dashboard card navy */
+    --accent-mint: #5eead4;       /* Brand mint green */
+    --accent-hover: #2dd4bf;      /* Darker mint for hover */
+    --text-white: #ffffff;
+    --text-gray: #9ca3af;
+    --border-subtle: rgba(255, 255, 255, 0.05);
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;            /* Allows scrolling if screen is small */
+    margin: 0;
+  }
+  
+  .login-box {
+    background: var(--card-bg);
+    width: 380px;                 /* Matches the width from your login screenshot */
+    padding: 40px;
+    border-radius: 32px;          /* Smooth, modern rounded corners */
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header Section */
+  .brand-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .logo-icon-box {
+    background-color: var(--accent-mint);
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: var(--bg-color);
+  }
+  
+  .logo-icon-box svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.5px;
+  }
+  
+  .brand-sub {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  /* Form Layout */
+  form {
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: border 0.2s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: var(--accent-mint);
+  }
+  
+  /* Button Synchronization (Sign Up & Google) */
+  button {
+    width: 100%;
+    height: 52px;                 /* Fixed height for perfect symmetry */
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+    border: none;
+    outline: none;
+  }
+  
+  /* Primary "Get Started" Button (Mint Green) */
+  button[type="submit"] {
+    background-color: var(--accent-mint);
+    color: var(--bg-color);
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-1px);
+  }
+  
+  /* Google Button (Clean White - No outer box) */
+  #googleSignUpBtn {
+    background-color: #ffffff;
+    color: #1f2937;
+    margin-top: 16px;              
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  #googleSignUpBtn:hover {
+    background-color: #f9fafb;
+    transform: translateY(-1px);
+  }
+  
+  #googleSignUpBtn img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Status & Error Messages */
+  #error {
+    min-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  
+  /* Footer Link */
+  .auth-footer {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-gray);
+  }
+  
+  .auth-footer a {
+    color: var(--accent-mint);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .auth-footer a:hover {
+    text-decoration: underline;
+  }
