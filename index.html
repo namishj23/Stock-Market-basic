@@ -7,51 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-icon">📈</span>
-                <div class="logo-text">Stock Prediction<span>Daily Contest</span></div>
-            </div>
-            <div class="nav-center">
-                <a href="#" class="nav-link active">Home</a>
-                <a href="#" class="nav-link">Predict</a>
-                <a href="#" class="nav-link">Leaderboard</a>
-                <a href="#" class="nav-link">How It Works</a>
-            </div>
-            <div class="nav-right">
-                <a href="login.html" class="sign-in">Log In</a>
-                <a href="signup.html" class="btn-get-started">Get Started</a>
-            </div>
-        </div>
-    </nav>
 
-    <section class="hero">
-        <div class="live-badge"><span></span> Daily Contest Live ✨</div>
-        <h1>Predict Stocks. <br><span class="highlight">Win Daily.</span></h1>
-        <p class="hero-sub">India's premier skill-based stock prediction contest. Pick the best performing NSE stock every day and win ₹500 daily.</p>
-        <div class="hero-btns">
-            <button class="btn-primary" onclick="location.href='signup.html'">Start Predicting →</button>
-            <button class="btn-secondary">How It Works</button>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <span class="logo-icon">📈</span>
+            <div class="logo-text">Stock Prediction<span>Daily Contest</span></div>
         </div>
-        <div class="hero-stats">
-            <div class="stat-card">
-                <span class="stat-icon">🏆</span>
-                <h3>₹500</h3>
-                <p>Daily Prize</p>
-            </div>
-            <div class="stat-card">
-                <span class="stat-icon">🕒</span>
-                <h3>30</h3>
-                <p>Min Window</p>
-            </div>
-            <div class="stat-card">
-                <span class="stat-icon">📈</span>
-                <h3>100</h3>
-                <p>NSE Stocks</p>
-            </div>
+
+        <!-- 🔧 ONLY CHANGE: data-page added -->
+        <div class="nav-center">
+            <a href="#" class="nav-link active" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="predict">Predict</a>
+            <a href="#" class="nav-link" data-page="leaderboard">Leaderboard</a>
+            <a href="#" class="nav-link" data-page="how">How It Works</a>
         </div>
-    </section>
+
+        <div class="nav-right">
+            <a href="login.html" class="sign-in">Log In</a>
+            <a href="signup.html" class="btn-get-started">Get Started</a>
+        </div>
+    </div>
+</nav>
+
+<!-- 🔧 ONLY CHANGE: wrapper added -->
+<div id="content">
+
+<section class="hero">
+    <div class="live-badge"><span></span> Daily Contest Live ✨</div>
+    <h1>Predict Stocks. <br><span class="highlight">Win Daily.</span></h1>
+    <p class="hero-sub">
+        India's premier skill-based stock prediction contest.
+        Pick the best performing NSE stock every day and win ₹500 daily.
+    </p>
+    <div class="hero-btns">
+        <button class="btn-primary" onclick="location.href='signup.html'">
+            Start Predicting →
+        </button>
+        <button class="btn-secondary">How It Works</button>
+    </div>
+
+    <div class="hero-stats">
+        <div class="stat-card">
+            <span class="stat-icon">🏆</span>
+            <h3>₹500</h3>
+            <p>Daily Prize</p>
+        </div>
+        <div class="stat-card">
+            <span class="stat-icon">🕒</span>
+            <h3>30</h3>
+            <p>Min Window</p>
+        </div>
+        <div class="stat-card">
+            <span class="stat-icon">📈</span>
+            <h3>100</h3>
+            <p>NSE Stocks</p>
+        </div>
+    </div>
+</section>
 
     <section class="how-it-works">
         <h2 class="section-title">How It <span class="highlight">Works</span></h2>
