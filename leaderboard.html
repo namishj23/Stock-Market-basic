@@ -3,31 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Stock Duel - Leaderboard</title>
+    <title>Leaderboard | StockPredict</title>
     <link rel="stylesheet" href="leaderboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="leaderboard-container">
-        <div class="header">
-            <h1>Daily Stock Duel</h1>
-            <p>Top Traders of the Day</p>
+        <header class="header-section">
+            <div class="daily-rank-badge">🏆 Daily Rankings</div>
+            <h1>Leaderboard</h1>
+            <p class="current-date">📅 Friday 9 January, 2026</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="label">Total Predictions</span>
+                <span class="value">124</span>
+            </div>
+            <div class="stat-card">
+                <span class="label highlight-green">Correct Predictions</span>
+                <span class="value highlight-green">67</span>
+            </div>
+            <div class="stat-card">
+                <span class="label">Top Stock</span>
+                <span class="value">RELIANCE</span>
+            </div>
+            <div class="stat-card">
+                <span class="label">Avg % Change</span>
+                <span class="value highlight-green">↗ +1.8%</span>
+            </div>
         </div>
 
-        <table id="leaderboard">
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Trader</th>
-                    <th>Profit/Loss</th>
-                    <th>Return (%)</th>
-                </tr>
-            </thead>
-            <tbody id="leaderboard-body">
-                </tbody>
-        </table>
-    </div>
+        <div class="table-container">
+            <div class="table-header">
+                <div class="title-box">
+                    <span class="icon">🏆</span>
+                    <div class="text">
+                        <h3>Today's Leaderboard</h3>
+                        <p>Updated at market close</p>
+                    </div>
+                </div>
+                <div class="prize-pool">
+                    <span>Prize Pool</span>
+                    <span class="amount">₹500</span>
+                </div>
+            </div>
 
-    <script src="leaderboard.js"></script>
+            <table class="rank-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Trader</th>
+                        <th>Stock</th>
+                        <th>Direction</th>
+                        <th>% Change</th>
+                        <th>Accuracy</th>
+                        <th>Wins</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    <tr>
+                        <td class="rank-col"><span class="medal gold">👑</span></td>
+                        <td>
+                            <div class="trader-info">
+                                <div class="avatar avatar-rs">RS</div>
+                                <div class="details">
+                                    <span class="name">Rahul Sharma</span>
+                                    <span class="timestamp">Submitted 09:02 AM</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>RELIANCE</td>
+                        <td><span class="dir-badge up">↗ UP</span></td>
+                        <td class="change-val">+3.42%</td>
+                        <td>72.5%</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td class="rank-col"><span class="medal silver">🥈</span></td>
+                        <td>
+                            <div class="trader-info">
+                                <div class="avatar avatar-pp">PP</div>
+                                <div class="details">
+                                    <span class="name">Priya Patel</span>
+                                    <span class="timestamp">Submitted 09:05 AM</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>TCS</td>
+                        <td><span class="dir-badge up">↗ UP</span></td>
+                        <td class="change-val">+2.89%</td>
+                        <td>68.3%</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer class="footer-notice">
+            Rankings are updated after market close at 3:30 PM IST. Final winner announced at 4:00 PM IST.
+        </footer>
+    </div>
 </body>
 </html>

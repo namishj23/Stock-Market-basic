@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StockPredict – Today's Prediction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="prediction.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">📈 StockPredict</div>
+  <div class="nav-links">
+    <a>Home</a>
+    <a class="active">Predict</a>
+    <a>Leaderboard</a>
+    <a>How It Works</a>
+  </div>
+  <div class="nav-actions">
+    <button class="ghost">Sign In</button>
+    <button class="primary">Get Started</button>
+  </div>
+</nav>
+
+<!-- PAGE -->
+<main class="container">
+
+  <h1 class="title">Today's <span>Prediction</span></h1>
+  <p class="subtitle">
+    Select your stock, predict the direction, and share your analysis.
+    The best prediction wins ₹500 daily.
+  </p>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat-card">
+      🏆
+      <strong>₹500</strong>
+      <span>Today's Prize</span>
+    </div>
+    <div class="stat-card">
+      ⏰
+      <strong>9:00 – 9:30</strong>
+      <span>AM IST Window</span>
+    </div>
+    <div class="stat-card">
+      👥
+      <strong>124</strong>
+      <span>Predictions Today</span>
+    </div>
+  </section>
+
+  <!-- FORM CARD -->
+  <section class="card">
+
+    <div class="alert success">
+      🟢 Submission Window Open
+      <span>9:00 AM – 9:30 AM IST</span>
+    </div>
+
+    <!-- STEP 1 -->
+    <div class="step">
+      <h3><span>1</span> Select Stock</h3>
+      <select>
+        <option>Select a stock…</option>
+        <option>RELIANCE</option>
+        <option>TCS</option>
+        <option>INFY</option>
+      </select>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step">
+      <h3><span>2</span> Predict Direction</h3>
+      <div class="direction">
+        <div class="dir-card bullish">
+          📈
+          <strong>Bullish</strong>
+          <p>Stock will go UP</p>
+        </div>
+        <div class="dir-card bearish">
+          📉
+          <strong>Bearish</strong>
+          <p>Stock will go DOWN</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step">
+      <h3><span>3</span> Your Analysis <small>(min 50 words)</small></h3>
+      <textarea placeholder="Explain your prediction rationale. Include technical indicators, news, fundamentals, or market sentiment that supports your prediction..."></textarea>
+      <div class="hint">
+        Share your analysis: technical indicators, news, market trends, etc.
+        <span>0 / 50 words</span>
+      </div>
+    </div>
+
+    <!-- CHECK -->
+    <div class="confirm">
+      <input type="checkbox" />
+      <p>
+        I confirm that I am 18 years or older and understand this is a skill-based contest.
+        I agree to the <a>Terms & Conditions</a> and <a>Disclaimer</a>.
+      </p>
+    </div>
+
+    <!-- WARNING -->
+    <div class="alert danger">
+      ⚠️ Once submitted, your prediction <strong>cannot be changed</strong>.
+      Please review carefully.
+    </div>
+
+    <!-- CTA -->
+    <button class="submit">
+      🔒 Lock In Prediction
+    </button>
+
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div>
+    <strong>StockPredict</strong>
+    <p>India’s premier daily skill-based stock prediction contest.</p>
+  </div>
+  <div>
+    <h4>Contest</h4>
+    <a>Make Prediction</a>
+    <a>Leaderboard</a>
+    <a>How It Works</a>
+  </div>
+  <div>
+    <h4>Legal</h4>
+    <a>Disclaimer</a>
+    <a>Terms & Conditions</a>
+    <a>Privacy Policy</a>
+  </div>
+  <div>
+    <h4>Support</h4>
+    <a>Contact Us</a>
+    <a>FAQ</a>
+  </div>
+</footer>
+
+</body>
+</html>
